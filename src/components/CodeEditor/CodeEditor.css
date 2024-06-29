@@ -1,0 +1,30 @@
+/* Container for the code editor to ensure full-screen height and column layout */
+.code-editor-container {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
+  width: 100%; /* Full width of the container */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Styles for the textarea (code input area) */
+textarea {
+  width: 100%; /* Full width of the container */
+  height: 50vh; /* Half of the viewport height */
+  padding: 10px; /* Padding inside the textarea */
+  font-family: monospace; /* Monospace font for code */
+  font-size: 14px; /* Font size */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below the textarea */
+}
+
+/* Styles for the preformatted text block (code display area) */
+pre {
+  width: 100%; /* Full width of the container */
+  height: 50vh; /* Half of the viewport height */
+  overflow: auto; /* Scrollable content */
+  background-color: #f5f5f5; /* Light gray background color */
+  padding: 10px; /* Padding inside the pre block */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+}

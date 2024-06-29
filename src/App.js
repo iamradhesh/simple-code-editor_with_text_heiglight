@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+// Importing the React library to use JSX and create components.
+import React from 'react';
+
+// Importing the CodeEditor component from the specified path.
+import CodeEditor from './components/CodeEditor/CodeEditor';
+
+// Importing the CSS file for styling the App component.
 import './App.css';
 
+// Defining the main App component.
 function App() {
   return (
+    // The root div for the App component with a className "App".
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Main heading for the application */}
+      <h1>react-simple-code-editor</h1>
+      {/* Brief description of the application */}
+      <p>A simple no-frills code editor with syntax highlighting.</p>
+      {/* Including the CodeEditor component within the App component */}
+      <CodeEditor />
     </div>
   );
 }
 
+// Exporting the App component as the default export.
 export default App;
